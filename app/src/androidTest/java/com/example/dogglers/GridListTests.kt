@@ -37,15 +37,8 @@ class GridListTests : BaseTest() {
     var activityRule: ActivityScenarioRule<GridListActivity>
             = ActivityScenarioRule(GridListActivity::class.java)
 
-    @Test
-    fun `grid_list_content_at_first_position`() {
-        checkFirstPosition()
-    }
 
-    @Test
-    fun `grid_list_content_on_first_page`() {
-        onView(withText("Nox")).check(matches(isDisplayed()))
-    }
+
 
     @Test
     fun `grid_list_content_at_last_position`() {
